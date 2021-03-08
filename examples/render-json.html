@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cat.js</title>
+	<link rel="stylesheet" href="../src/cat.css">
+</head>
+<body>
+	<style>
+		.user {
+			margin: 10px;
+			padding: 20px;
+			background-color: #DDD;
+			border-radius: 20px;
+		}
+	</style>
+
+	<div render-json="https://jsonplaceholder.typicode.com/users">
+		<div class="user">
+			<p>
+				ID:          {{id}}                <br/>
+				Name:        {{name}}              <br/>
+				Address:     {{address.street}}    <br/>
+				Email:       {{email}}
+			</p>
+		</div>
+	</div>
+
+	<script src="../src/cat.js"></script>
+</body>
+</html>

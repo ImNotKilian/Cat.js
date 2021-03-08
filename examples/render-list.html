@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cat.js</title>
+	<link rel="stylesheet" href="../src/cat.css">
+</head>
+<body>
+	<style>
+		.user {
+			margin: 10px;
+			padding: 20px;
+			background-color: #DDD;
+			border-radius: 20px;
+		}
+	</style>
+
+	<script>
+		let list = [
+		  {
+		    "id": 1,
+		    "name": "Leanne Graham",
+		    "username": "Bret",
+		    "email": "Sincere@april.biz"
+		  },
+
+		  {
+		    "id": 2,
+		    "name": "Ervin Howell",
+		    "username": "Antonette",
+		    "email": "Shanna@melissa.tv"
+		  },
+
+		  {
+		    "id": 3,
+		    "name": "Clementine Bauch",
+		    "username": "Samantha",
+		    "email": "Nathan@yesenia.net"
+		  },
+
+		  {
+		    "id": 4,
+		    "name": "Patricia Lebsack",
+		    "username": "Karianne",
+		    "email": "Julianne.OConner@kory.org"
+		  },
+
+		  {
+		    "id": 5,
+		    "name": "Chelsey Dietrich",
+		    "username": "Kamren",
+		    "email": "Lucio_Hettinger@annie.ca"
+		  }
+		];
+	</script>
+
+
+	<div render-list="list">
+		<div class="user">
+			<p>
+				ID:        {{id}}           <br/>
+				Name:      {{name}}         <br/>
+				Username:  {{username}}     <br/>
+				Email:     {{email}}
+			</p>
+		</div>
+	</div>
+
+	<script src="../src/cat.js"></script>
+</body>
+</html>

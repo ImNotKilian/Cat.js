@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cat.js</title>
+	<link rel="stylesheet" href="../src/cat.css">
+</head>
+<body>
+	
+	<script>
+		var islogged = false;
+	</script>
+
+	<div render-when="islogged">
+		<h3>Welcome <span render-watch="#username-input"></span></h3>
+		<button onclick="islogged = false;">Logout</button>
+	</div>
+
+	<div render-when="!islogged">
+		<input type="text" id="username-input" placeholder="username"> 
+		<button onclick="islogged = true;">Login</button>
+	</div>
+
+	<script src="../src/cat.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cat.js</title>
+	<link rel="stylesheet" href="../src/cat.css">
+</head>
+<body>
+
+	<script>
+		const lista = ["manzana", "banana", "frutilla", "uva"];
+
+		function añadir () {
+			const nuevafruta = _cat.value('myTextInput');
+			lista.push(nuevafruta);
+			_cat.refresh();
+		}
+	</script>
+
+	<input type="text" id="myTextInput"> 
+	<button onclick="añadir();">Añadir</button>
+	
+	<div render-iterator="lista">
+		<div>
+			Fruta #{{i}}
+			<a href="#">{{value}}</a>
+		</div>
+	</div>
+
+	<script src="../src/cat.js"></script>
+</body>
+</html>
